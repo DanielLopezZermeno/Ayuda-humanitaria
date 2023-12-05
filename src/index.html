@@ -6,8 +6,76 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default" defer></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAE7513sROASRMElGrHOXCsR47_1fQ430s&callback=initMap&v=weekly"
+        defer></script>
 </head>
 <body>
   <app-root></app-root>
+  <script>
+    function initMap() {
+const myLatLng = { lat: 21.885509503063286, lng: -102.29270106521804 };
+const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 13,
+    center: myLatLng,
+});
+
+new google.maps.Marker({
+    position: { lat: 21.903224, lng: -102.275163 },
+    map,
+    title: "Proteccion Civil",
+});
+new google.maps.Marker({
+    position: { lat: 21.908654696237637, lng: -102.31076460479073 },
+    map,
+    title: "DIF Municipal",
+});
+new google.maps.Marker({
+    position: { lat: 21.87563427453103, lng: -102.25627618420394 },
+    map,
+    title: "Estacion De Bomberos Del Municipio De Aguascalientes",
+});
+
+new google.maps.Marker({
+    position: { lat: 21.877167537070733, lng: -102.25778895008361 },
+    map,
+    title: "Policia Cibernetica",
+});
+
+new google.maps.Marker({
+    position: { lat: 21.87828684964165, lng: -102.25707458531284 },
+    map,
+    title: "Secreataria de Seguridad Publica",
+});
+
+new google.maps.Marker({
+    position: { lat: 21.896751179211076, lng: -102.29916503937712 },
+    map,
+    title: "Direccion De Asuntos Internos De Seguridad Publica",
+});
+
+new google.maps.Marker({
+    position: { lat: 21.87829430896413, lng: -102.25707279304407 },
+    map,
+    title: "Secretaría de Seguridad Pública del Estado",
+});
+
+new google.maps.Marker({
+    position: { lat: 21.87930336318533, lng: -102.28103582681771 },
+    map,
+    title: "Fiscalía General del Estado de Aguascalientes",
+});
+
+new google.maps.Marker({
+    position: { lat: 21.88151237173585, lng: -102.28103925455757 },
+    map,
+    title: "Policia Ministerial",
+});
+}
+
+window.initMap = initMap;
+</script>
 </body>
 </html>

@@ -1,0 +1,27 @@
+<body>
+<div class="login-card">
+    <h2>Reporte de Emergencia</h2>
+    <h3>Completa el formulario para enviar un reporte</h3>
+    <form class="login-form" method="post">
+        <input type="date" id="fecha" name="fecha" value="<?php echo date('Y-m-d'); ?>" readonly hidden>
+        <input type="time" id="hora" name="hora" value="<?php echo date('H:i'); ?>" readonly hidden>
+
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto" placeholder="Titulo del reporte" required>
+
+        <label for="asunto">Reporte:</label>
+        <input type="text" id="asunto" name="asunto" placeholder="Descripción del reporte" required>
+
+        <label for="solicitar">Solicitar ayuda:</label>
+        <select id="solicitar" name="solicitar" required>
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="ninguno">No solicitar</option>
+            <option value="policia">Policía</option>
+            <option value="ambulancia">Ambulancia</option>
+            <option value="bombero">Bombero</option>
+         </select>
+
+        <button type="submit">Enviar Reporte</button>
+    </form>
+</div>
+</body>

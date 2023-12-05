@@ -1,0 +1,66 @@
+
+<body>
+    <div class="login-card" id="registroFormContainer">
+        <h2>Registro</h2>
+        <h3>Ingresa tus datos para crear una cuenta</h3>
+        <form class="login-form" method="post">
+            <!-- Información personal -->
+            <input type="text" name="nombreUsuario" placeholder="Nombre de usuario" required>
+            <input type="text" name="nombres" placeholder="Nombres" required>
+            <input type="text" name="apellidos" placeholder="Apellidos" required>
+            <input type="email" name="correo" placeholder="Correo electrónico" required>
+            <input type="password" name="contraseña" placeholder="Contraseña" required>
+            <input type="password" name="confirmarContraseña" placeholder="Confirmar contraseña" required>
+
+            <!-- Dirección -->
+            <h3>Dirección</h3>
+            <input type="text" name="calle" placeholder="Calle" required>
+            <input type="text" name="numeroExterior" placeholder="Número Exterior" required>
+            <input type="text" name="numeroInterior" placeholder="Número Interior">
+            <input type="text" name="fraccionamiento" placeholder="Fraccionamiento">
+            <input type="text" name="codigoPostal" placeholder="Código Postal" required>
+            <input type="text" name="estado" placeholder="Estado" required>
+            
+            <h3>Ubicación</h3>
+            <div id="map" style="height: 300px;"></div> <!-- Ajusta la altura según tus necesidades -->
+
+            <!-- Medio de contacto -->
+            <h3>Medio de contacto</h3>
+            <input type="tel" name="telefonoCasa" placeholder="Teléfono de Casa">
+            <input type="tel" name="telefonoPersonal" placeholder="Teléfono Personal">
+
+            <!-- Contacto de emergencia -->
+            <h3>Contacto de emergencia</h3>
+            <input type="text" name="nombreEmergencia" placeholder="Nombre de Emergencia">
+            <input type="text" name="apellidoEmergencia" placeholder="Apellido de Emergencia">
+            <input type="tel" name="telefonoEmergencia" placeholder="Teléfono de Emergencia">
+
+            <!-- Información médica -->
+            <h3>Información Médica</h3>
+            <label for="tipoSangre">Tipo de Sangre:</label>
+            <select name="tipoSangre" id="tipoSangre">
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+
+            <label for="enfermedadCronica">Enfermedad Crónica:</label>
+            <select name="enfermedadCronica" id="enfermedadCronica">
+                <option value="ninguna">Ninguna</option>
+                <option value="diabetes">Diabetes</option>
+                <option value="hipertension">Hipertensión</option>
+                <option value="asma">Asma</option>
+                <!-- Agrega más opciones según sea necesario -->
+            </select>
+
+            <button type="submit">Registrar</button>
+        </form>
+        <p>¿Ya tienes una cuenta? <a href="/iniciar">Inicia sesión</a></p>
+    </div>
+</body>
+
