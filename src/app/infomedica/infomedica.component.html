@@ -1,0 +1,28 @@
+<body>
+    <div class="login-card" id="registroFormContainer">
+        <form class="login-form" method="post">
+ <!-- Información médica -->
+ <h3>Información Médica</h3>
+ <label for="tipoSangre">Tipo de Sangre:</label>
+ <select name="tipoSangre" id="tipoSangre">
+     <option value="A+">A+</option>
+     <option value="A-">A-</option>
+     <option value="B+">B+</option>
+     <option value="B-">B-</option>
+     <option value="O+">O+</option>
+     <option value="O-">O-</option>
+     <option value="AB+">AB+</option>
+     <option value="AB-">AB-</option>
+ </select>
+ <label for="enfermedadCronica">Enfermedad Crónica:</label>
+ <select name="enfermedadCronica" id="enfermedadCronica">
+     <option value="ninguna">Ninguna</option>
+     <option value="diabetes">Diabetes</option>
+     <option value="hipertension">Hipertensión</option>
+     <option value="asma">Asma</option>
+     <!-- Agrega más opciones según sea necesario -->
+ </select>
+ <button routerLink="/iniciar">Registrar</button>
+    </form>
+    </div>
+</body>
